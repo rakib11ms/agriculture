@@ -1,7 +1,8 @@
 <?php
+use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Backend\DashboardController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/check',function (){
-//     return "hello laravel";
-// });
+Route::get('/dashboard',[DashboardController::class,'index']);
