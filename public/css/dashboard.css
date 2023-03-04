@@ -1,3 +1,7 @@
-.header-text{
-	color: red;
+.header-text {
+    color: red;
+}
+.nav-designation {
+    font-size: 12px;
+    color: rgb(153, 153, 153);
 }
