@@ -3,6 +3,7 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\DashboardController;
+use App\Http\Controllers\Backend\Authentication\AuthenticationController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,3 +20,5 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard',[DashboardController::class,'index']);
+Route::get('/login',[AuthenticationController::class,'index'])->name('show.login'); 
+Route::post('/login',[AuthenticationController::class,'login'])->name('logins'); 
