@@ -14,6 +14,7 @@ class AuthenticationController extends Controller
     {
         return view('authentication.loginform');
     }
+    
     public function login(Request $request)
     {
         // dd($request->all());
